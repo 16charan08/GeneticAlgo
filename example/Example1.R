@@ -88,10 +88,11 @@ rm(tempdf)
 mal$objective <- mal$robustified1
 
 # call the genetic algorithm
-modelsdf <- geneticimplement(individpergeneration = 30,
+modelsdf <- geneticimplement(individpergeneration = 10,
                              initialclusters      = 5,
                              initialcovars        = 1,
-                             generations          = 200,
+                             generations          = 50,
                              modeldata = mal,
                              envdata = env,
                              shapefile = shp)
+
